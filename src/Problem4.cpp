@@ -37,5 +37,42 @@ struct node{
 };
 
 void merge_two_bst(struct node *root1, struct node *root2){
+	/*struct node *s1 = NULL;
+	struct node *current1 = root1;
+	struct node *s2 = NULL;
+	struct node *current2 = root2;*/
+	if (root1 == NULL || root2 == NULL)
+		return;
+	/*while (current1 != NULL || isEmpty(s1) || current2 != NULL || isEmpty(s2)){
+		if (current1 != NULL || current2 != NULL){
+			if (current1 != NULL){
+				push(&s1, current1);
+				current1 = current1->left;
+			}
+			if (current2 != NULL){
+				push(&s2, current2);
+				current2 = current2->left;
+			}
+		}
+		else{
+			if (isEmpty(s1)){
+				while (!isEmpty(s2)){
+					current2 = pop(&s2);
+					current2->left = NULL;
+				}
+				return;
+			}
+			if (isEmpty(s2)){
+				while (!isEmpty(s1)){
+					current1 = pop(&s1);
+					current1->left = NULL;
+				}
+				return;
+			}
+			current1 = pop(&s1);
+			current2 = pop(&s2);
+			if (current1->data<current2->data){}
+		}
+	}*/
 	
 }

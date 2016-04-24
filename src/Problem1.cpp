@@ -49,8 +49,19 @@ struct node{
 	struct node *left;
 	struct node *right;
 };
-
-
+/*int inorder(struct node *root){
+	while (root != NULL){
+		inorder(root->left);
+		return root->data;
+		inorder(root->right);
+	}
+	
+}
+*/
 int get_missing_value(struct node *root,int n){
-    return -1;
+	int total=(n+1)*(n+2)/2;
+	if (root == NULL)
+		return -1;
+	
+	
 }
